@@ -1,2 +1,4 @@
-# modern-tools-for-python-development_talk
-Best Python tools for collaboration
+# Initial Setup
+
+* Make the `setup` script executable `chmod u+x setup`
+* Run `setup` script in your CLI

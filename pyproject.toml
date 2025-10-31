@@ -1,0 +1,40 @@
+[project]
+name = "pydata-norwich-sep-2025"
+version = "0.1.0"
+description = "Talk for Pydata Norwich Sep 2025"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+
+dev = ["ruff", "pre-commit"]
+features = ["polars", "seaborn"]
+training = ["spacy>=3"]
+inference = ["pydantic>=2"]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = false
+
+[tool.ruff.lint]
+select = ["E", "F", "D", "I"]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D206",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
